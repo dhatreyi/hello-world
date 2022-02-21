@@ -6,5 +6,10 @@ pipeline{
               echo "git checkout"
             }
         }
+        stage("Code Build"){
+           steps{
+              mvn clean package
+            }
+        }
       }
 }
