@@ -2,7 +2,9 @@ pipeline{
     agent any
       stages{
         stage("SCM Checkout"){
-        echo "git checkout"
+           steps{
+              echo "git checkout"
+            }
         }
       }
 }
