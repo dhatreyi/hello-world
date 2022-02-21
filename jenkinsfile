@@ -4,12 +4,12 @@ pipeline{
         stage("SCM Checkout"){
            steps{
               echo "git checkout"
-            }
+           }
         }
         stage("Code Build"){
            steps{
-              mvn clean package
-            }
+             sh "mvn clean package"
+           }
         }
       }
 }
